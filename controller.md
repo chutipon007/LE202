@@ -1,4 +1,4 @@
-# survey micro controler
+# survey micro controller
 ## ESP-C3 RISC-V (12F 32S 13 13U)
 - มีราคาอยู่ที่ 10-170 บาท
 - ความเร็ว 160 MHz
