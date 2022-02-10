@@ -10,7 +10,7 @@
 ![image](https://user-images.githubusercontent.com/98943400/153398641-2a9e946f-eea5-4927-abad-065626e3105a.png)
 
 - ตัวโปรแกรมจะเริ่มด้วการประกาศตัวแปรตัวเลข cnt 
-- จากนั้นจะทำการยกเลิกเชื่อมต่อ wifi โดยมีดีเลย์ 100 ms
+- จากนั้นจะทำการเซ็ต wifi ให้พร้อมทำงาน โดยมีดีเลย์ 100 ms
 - แล้วจะเป็นลูปแสดงข้อความเริ่มแสกนหา wifi
 - ถ้าหาไม่เจอ จะแสดงข้อความ NO NETWORK FOUND
 - ถ้าหาเจอก็จะแสดงออกมาให้เราเลือกใช้
@@ -19,10 +19,10 @@
 ![image](https://user-images.githubusercontent.com/98943400/153400485-c376b107-aae4-41d0-9a3e-78bfe0b01e4d.png)
 
 - ตัวโปรแกรมจะเริ่มด้วการประกาศตัวแปรตัวเลข cnt
-- จากนั้นเซ็ตอัพกำหนดหน้าที่ของขาสัญญาณ (pinMode)
-- สร้างลูปให้นับเรื่อยๆ ถ้าหากเป็นไปตามเงื่อนไข cnt%2 
-- แล้ว cnt จะแสดงข้อความ ON และเปิด
-- ถ้าหากไม่เป็น จะแสดงข้อความ OFF และปิด
+- จากนั้นเซ็ตอัพกำหนดหน้าที่ของขาสัญญาณ (pinMode) ให้ port 0 เป็น output
+- สร้างลูปให้นับเรื่อยๆ ถ้าหากเป็นไปตามเงื่อนไข cnt%2
+- แล้ว cnt เป็นเลขคู่ จะแสดงข้อความ ON และเปิด
+- ถ้าหาก cnt เป็นเลขคี่ จะแสดงข้อความ OFF และปิด
 - โดยแต่ละครั้งจะมีดีเลย์ 500 ms
 
 ## Experiment 4
@@ -36,11 +36,22 @@
 ## Experiment 5
 ![image](https://user-images.githubusercontent.com/98943400/153401685-95416d25-a0fc-4a3d-9c63-c5215608f631.png)
 
-- เริ่มด้วยการกำหนดตัวแปร ssid และ password
+- เริ่มด้วยการใส่ชื่อ ssid และ password
 - จากนั้นเลือก Server
 - แล้วเริ่มทำการรับสัญญาณ จะมีดีเลย์ 500 ms 
 - โปรแกรมจะแสดง IP address ออกมา
 - ถ้าหากเชื่อมต่อไม่สำเร็จ จะขึ้นว่า Path Not Found
-- ถ้าหากสำเร็จจะแสดง Hello cnt: 
+- ถ้าหากสำเร็จจะแสดง Hello cnt: (cnt จะบวก 1 ด้วย)
 - แล้ว HTTP server started
 
+## Experiment 6
+![image](https://user-images.githubusercontent.com/98943400/153404990-77d85cc7-8781-4bff-a864-ed49c409afc3.png)
+![image](https://user-images.githubusercontent.com/98943400/153405006-59e5a9af-f531-4d26-9845-fc4173326aa1.png)
+
+- เริ่มด้วยการกำหนด SSID และ password
+- ตั้ง local ip , gateway , subnet
+- เปิด web server ที่ port 80
+- สร้าง access point จะมีดีเลย์ 100 ms 
+- มีกรณี Path Not Found
+- และถ้าเชื่อมต่อสำเร็จจะแสดง Hello cnt: 
+- HTTP Server started
