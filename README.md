@@ -51,3 +51,6 @@
 - ต้องกำหนด IP address (local_ip , gateway , subnet) 
 - เปิดเว็บเซิร์ฟเวอร์ที่พอร์ต 80 และเตรียมเว็บเซิร์ฟเวอร์ไว้ 1 ตัว
 - ใช้คำสั่ง pio device monitor ในการสร้างตัว Wifi 
+
+### pio device monitor = ลองรัน
+### pio run -t upload = อัพ
