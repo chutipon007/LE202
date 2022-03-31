@@ -1,8 +1,8 @@
 
-lui x5, 0xd0000000
-addi x6, x0, 0xff
-sw x6, 0(x5)
-addi x7, x0, 253
-sb x7, 16(x5)
-addi x7, x0, 252
-sb x7, 17(x5)
+- lui x5, 0xd0000000   %ทำให้ x5 เป็น d0000000
+- addi x6, x0, 0xff    %ให้ x6 เป็น 255 (ff)
+- sw x6, 0(x5)         %store word : ยกไปทั้ง 32 บิตใส่ที่ 0 ของ x5
+- addi x7, x0, 253     %บวก 253 แล้วเก็บที่ x7
+- sb x7, 16(x5)        %ส่งค่าไปที่ LED
+- addi x7, x0, 252
+- sb x7, 17(x5)
