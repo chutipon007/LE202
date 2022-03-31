@@ -5,4 +5,9 @@
 ![image](https://user-images.githubusercontent.com/98943400/161010380-fde5e6a1-e983-42f0-83ad-7959cebaeaed.png)
 
 ## โปรเซสเซอร์ และ ไมโครคอนโทรลเลอร์
+- มีความแตกต่างกันตามตารางเปรียบเทียบนี้
+
+![image](https://user-images.githubusercontent.com/98943400/161012025-109e96cb-5a3d-4afa-a5b6-b258706be1e9.png)
+
+
 
